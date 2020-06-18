@@ -20,8 +20,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDF-lV-B1w">
-                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <subviews>
+                                    <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rXM-TH-HNy">
+                                        <rect key="frame" x="0.0" y="574" width="375" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <items>
+                                            <tabBarItem systemItem="favorites" id="vb3-Eg-lWf"/>
+                                            <tabBarItem title="Item" id="ldf-g3-2ER"/>
+                                            <tabBarItem title="Item" id="7kc-3I-MDp"/>
+                                            <tabBarItem systemItem="more" id="WAn-Pb-IDG"/>
+                                        </items>
+                                    </tabBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jyh-Gd-plV">
+                                        <rect key="frame" x="129.5" y="282.5" width="119" height="58"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="20" maxX="10" maxY="20"/>
+                                        <state key="normal" title="Login/Register">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.53333333329999999" green="0.47058823529999999" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Jyh-Gd-plV" firstAttribute="centerX" secondItem="uDF-lV-B1w" secondAttribute="centerX" constant="1.5" id="bWH-3K-oMC"/>
+                                    <constraint firstItem="Jyh-Gd-plV" firstAttribute="centerY" secondItem="uDF-lV-B1w" secondAttribute="centerY" id="h6s-8q-szK"/>
+                                </constraints>
                             </view>
                             <stackView opaque="NO" tag="1" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YDP-5G-xhP">
                                 <rect key="frame" x="0.0" y="44" width="0.0" height="623"/>
@@ -91,6 +116,7 @@
                         <outlet property="stackLeading" destination="Uzr-fr-wb2" id="Oe5-pc-gm8"/>
                         <outlet property="stackTrailing" destination="1VP-lO-Qpb" id="xRy-Pl-rz8"/>
                         <outlet property="stackView" destination="YDP-5G-xhP" id="aUF-ht-jrL"/>
+                        <outlet property="tabBar" destination="rXM-TH-HNy" id="lLg-IU-5vM"/>
                         <outlet property="ubeView" destination="uDF-lV-B1w" id="OJW-mN-ROp"/>
                     </connections>
                 </viewController>
@@ -155,17 +181,13 @@
         <!--Navigation Controller-->
         <scene sceneID="J3Z-T1-8Gg">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="LfK-QP-Yl6" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LfK-QP-Yl6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CSX-be-or6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Itt-Nl-wyN">
-                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="azO-lZ-h7t"/>
                     </connections>

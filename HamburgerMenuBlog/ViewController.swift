@@ -17,8 +17,9 @@ func addBackground(color: UIColor) {
 }
 }
     
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITabBarDelegate {
     
+    @IBOutlet weak var tabBar: UITabBar!
     @IBOutlet weak var stackLeading: NSLayoutConstraint!
     @IBOutlet weak var stackTrailing: NSLayoutConstraint!
     @IBOutlet var ubeView: UIView!
@@ -51,10 +52,38 @@ class ViewController: UIViewController {
         }
     }
     
+
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if let ind = tabBar.items?.index(of: item){
+            switch ind {
+            case 0:
+                print(ind)
+                let favouriteController = FavouriteViewController(nibName: "FavouriteViewController", bundle: nil)
+                self.navigationController?.pushViewController(favouriteController, animated: true)
+            case 1:
+                print(ind)
+                let itemOneController = ItemOneViewController(nibName: "ItemOneViewController", bundle: nil)
+                self.navigationController?.pushViewController(itemOneController, animated: true)
+           case 2:
+                print(ind)
+                let itemTwoController = ItemTwoViewController(nibName: "ItemTwoViewController", bundle: nil)
+                self.navigationController?.pushViewController(itemTwoController, animated: true)
+            case 3:
+                print(ind)
+                let moreController = MoreViewController(nibName: "MoreViewController", bundle: nil)
+                self.navigationController?.pushViewController(moreController, animated: true)
+                
+            default:
+                print(ind)
+            }
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         stackView.addBackground(color: .white)
+        tabBar.delegate = self
     }
 
 

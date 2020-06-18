@@ -12,6 +12,14 @@
 		454751C61F19856F002AC524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454751C41F19856F002AC524 /* Main.storyboard */; };
 		454751C81F19856F002AC524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454751C71F19856F002AC524 /* Assets.xcassets */; };
 		454751CB1F19856F002AC524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454751C91F19856F002AC524 /* LaunchScreen.storyboard */; };
+		FC567088249BDB0B00AA4BCD /* ItemOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC567086249BDB0B00AA4BCD /* ItemOneViewController.swift */; };
+		FC567089249BDB0B00AA4BCD /* ItemOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC567087249BDB0B00AA4BCD /* ItemOneViewController.xib */; };
+		FC56708C249BDB9100AA4BCD /* ItemTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */; };
+		FC56708D249BDB9100AA4BCD /* ItemTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */; };
+		FC567090249BDC3000AA4BCD /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC56708E249BDC3000AA4BCD /* MoreViewController.swift */; };
+		FC567091249BDC3000AA4BCD /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC56708F249BDC3000AA4BCD /* MoreViewController.xib */; };
+		FC5C1D67249A621B0057F386 /* FavouriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC5C1D66249A621B0057F386 /* FavouriteViewController.xib */; };
+		FC5C1D69249A6FE60057F386 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C1D68249A6FE60057F386 /* FavouriteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		454751C71F19856F002AC524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		454751CA1F19856F002AC524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		454751CC1F19856F002AC524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC567086249BDB0B00AA4BCD /* ItemOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemOneViewController.swift; sourceTree = "<group>"; };
+		FC567087249BDB0B00AA4BCD /* ItemOneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemOneViewController.xib; sourceTree = "<group>"; };
+		FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemTwoViewController.swift; path = HamburgerMenuBlog/ItemTwoViewController.swift; sourceTree = "<group>"; };
+		FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ItemTwoViewController.xib; path = HamburgerMenuBlog/ItemTwoViewController.xib; sourceTree = "<group>"; };
+		FC56708E249BDC3000AA4BCD /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		FC56708F249BDC3000AA4BCD /* MoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
+		FC5C1D66249A621B0057F386 /* FavouriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteViewController.xib; sourceTree = "<group>"; };
+		FC5C1D68249A6FE60057F386 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +54,14 @@
 		454751B41F19856F002AC524 = {
 			isa = PBXGroup;
 			children = (
+				FC567086249BDB0B00AA4BCD /* ItemOneViewController.swift */,
+				FC567087249BDB0B00AA4BCD /* ItemOneViewController.xib */,
+				FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */,
+				FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */,
+				FC56708E249BDC3000AA4BCD /* MoreViewController.swift */,
+				FC56708F249BDC3000AA4BCD /* MoreViewController.xib */,
+				FC5C1D66249A621B0057F386 /* FavouriteViewController.xib */,
+				FC5C1D68249A6FE60057F386 /* FavouriteViewController.swift */,
 				454751BF1F19856F002AC524 /* HamburgerMenuBlog */,
 				454751BE1F19856F002AC524 /* Products */,
 			);
@@ -106,6 +130,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -124,8 +149,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC5C1D67249A621B0057F386 /* FavouriteViewController.xib in Resources */,
 				454751CB1F19856F002AC524 /* LaunchScreen.storyboard in Resources */,
+				FC567089249BDB0B00AA4BCD /* ItemOneViewController.xib in Resources */,
 				454751C81F19856F002AC524 /* Assets.xcassets in Resources */,
+				FC567091249BDC3000AA4BCD /* MoreViewController.xib in Resources */,
+				FC56708D249BDB9100AA4BCD /* ItemTwoViewController.xib in Resources */,
 				454751C61F19856F002AC524 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +167,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				454751C31F19856F002AC524 /* ViewController.swift in Sources */,
+				FC5C1D69249A6FE60057F386 /* FavouriteViewController.swift in Sources */,
+				FC56708C249BDB9100AA4BCD /* ItemTwoViewController.swift in Sources */,
+				FC567090249BDC3000AA4BCD /* MoreViewController.swift in Sources */,
+				FC567088249BDB0B00AA4BCD /* ItemOneViewController.swift in Sources */,
 				454751C11F19856F002AC524 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +301,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yayitserica.HamburgerMenuBlog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -281,7 +314,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yayitserica.HamburgerMenuBlog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -304,6 +337,7 @@
 				454751D11F19856F002AC524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
