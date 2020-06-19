@@ -27,6 +27,11 @@ class ViewController: UIViewController, UITabBarDelegate {
     @IBOutlet weak var stackView: UIStackView!
     var hamburgerMenuIsVisible = false
     
+    @IBAction func onLoginClick(_ sender: Any) {
+        let loginController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+        self.navigationController?.pushViewController(loginController, animated: true)
+
+    }
     @IBAction func hamburgerBtnTapped(_ sender: Any) {
         //if the hamburger menu is NOT visible, then move the ubeView back to where it used to be
         if !hamburgerMenuIsVisible {

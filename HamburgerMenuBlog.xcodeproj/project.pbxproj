@@ -12,12 +12,16 @@
 		454751C61F19856F002AC524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454751C41F19856F002AC524 /* Main.storyboard */; };
 		454751C81F19856F002AC524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454751C71F19856F002AC524 /* Assets.xcassets */; };
 		454751CB1F19856F002AC524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454751C91F19856F002AC524 /* LaunchScreen.storyboard */; };
+		FC566A1B249D0D9800D5F7E2 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC566A19249D0D9800D5F7E2 /* RegistrationViewController.swift */; };
+		FC566A1C249D0D9800D5F7E2 /* RestrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC566A1A249D0D9800D5F7E2 /* RestrationViewController.xib */; };
 		FC567088249BDB0B00AA4BCD /* ItemOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC567086249BDB0B00AA4BCD /* ItemOneViewController.swift */; };
 		FC567089249BDB0B00AA4BCD /* ItemOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC567087249BDB0B00AA4BCD /* ItemOneViewController.xib */; };
 		FC56708C249BDB9100AA4BCD /* ItemTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */; };
 		FC56708D249BDB9100AA4BCD /* ItemTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */; };
 		FC567090249BDC3000AA4BCD /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC56708E249BDC3000AA4BCD /* MoreViewController.swift */; };
 		FC567091249BDC3000AA4BCD /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC56708F249BDC3000AA4BCD /* MoreViewController.xib */; };
+		FC567094249BEAD000AA4BCD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC567092249BEAD000AA4BCD /* LoginViewController.swift */; };
+		FC567095249BEAD000AA4BCD /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC567093249BEAD000AA4BCD /* LoginViewController.xib */; };
 		FC5C1D67249A621B0057F386 /* FavouriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC5C1D66249A621B0057F386 /* FavouriteViewController.xib */; };
 		FC5C1D69249A6FE60057F386 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C1D68249A6FE60057F386 /* FavouriteViewController.swift */; };
 /* End PBXBuildFile section */
@@ -30,12 +34,16 @@
 		454751C71F19856F002AC524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		454751CA1F19856F002AC524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		454751CC1F19856F002AC524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC566A19249D0D9800D5F7E2 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		FC566A1A249D0D9800D5F7E2 /* RestrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestrationViewController.xib; sourceTree = "<group>"; };
 		FC567086249BDB0B00AA4BCD /* ItemOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemOneViewController.swift; sourceTree = "<group>"; };
 		FC567087249BDB0B00AA4BCD /* ItemOneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemOneViewController.xib; sourceTree = "<group>"; };
 		FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemTwoViewController.swift; path = HamburgerMenuBlog/ItemTwoViewController.swift; sourceTree = "<group>"; };
 		FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ItemTwoViewController.xib; path = HamburgerMenuBlog/ItemTwoViewController.xib; sourceTree = "<group>"; };
 		FC56708E249BDC3000AA4BCD /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		FC56708F249BDC3000AA4BCD /* MoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
+		FC567092249BEAD000AA4BCD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FC567093249BEAD000AA4BCD /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		FC5C1D66249A621B0057F386 /* FavouriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteViewController.xib; sourceTree = "<group>"; };
 		FC5C1D68249A6FE60057F386 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +62,10 @@
 		454751B41F19856F002AC524 = {
 			isa = PBXGroup;
 			children = (
+				FC567092249BEAD000AA4BCD /* LoginViewController.swift */,
+				FC566A19249D0D9800D5F7E2 /* RegistrationViewController.swift */,
+				FC566A1A249D0D9800D5F7E2 /* RestrationViewController.xib */,
+				FC567093249BEAD000AA4BCD /* LoginViewController.xib */,
 				FC567086249BDB0B00AA4BCD /* ItemOneViewController.swift */,
 				FC567087249BDB0B00AA4BCD /* ItemOneViewController.xib */,
 				FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */,
@@ -149,8 +161,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC567095249BEAD000AA4BCD /* LoginViewController.xib in Resources */,
 				FC5C1D67249A621B0057F386 /* FavouriteViewController.xib in Resources */,
 				454751CB1F19856F002AC524 /* LaunchScreen.storyboard in Resources */,
+				FC566A1C249D0D9800D5F7E2 /* RestrationViewController.xib in Resources */,
 				FC567089249BDB0B00AA4BCD /* ItemOneViewController.xib in Resources */,
 				454751C81F19856F002AC524 /* Assets.xcassets in Resources */,
 				FC567091249BDC3000AA4BCD /* MoreViewController.xib in Resources */,
@@ -166,8 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC567094249BEAD000AA4BCD /* LoginViewController.swift in Sources */,
 				454751C31F19856F002AC524 /* ViewController.swift in Sources */,
 				FC5C1D69249A6FE60057F386 /* FavouriteViewController.swift in Sources */,
+				FC566A1B249D0D9800D5F7E2 /* RegistrationViewController.swift in Sources */,
 				FC56708C249BDB9100AA4BCD /* ItemTwoViewController.swift in Sources */,
 				FC567090249BDC3000AA4BCD /* MoreViewController.swift in Sources */,
 				FC567088249BDB0B00AA4BCD /* ItemOneViewController.swift in Sources */,
