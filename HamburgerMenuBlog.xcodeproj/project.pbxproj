@@ -38,8 +38,8 @@
 		FC566A1A249D0D9800D5F7E2 /* RestrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestrationViewController.xib; sourceTree = "<group>"; };
 		FC567086249BDB0B00AA4BCD /* ItemOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemOneViewController.swift; sourceTree = "<group>"; };
 		FC567087249BDB0B00AA4BCD /* ItemOneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemOneViewController.xib; sourceTree = "<group>"; };
-		FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemTwoViewController.swift; path = HamburgerMenuBlog/ItemTwoViewController.swift; sourceTree = "<group>"; };
-		FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ItemTwoViewController.xib; path = HamburgerMenuBlog/ItemTwoViewController.xib; sourceTree = "<group>"; };
+		FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTwoViewController.swift; sourceTree = "<group>"; };
+		FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTwoViewController.xib; sourceTree = "<group>"; };
 		FC56708E249BDC3000AA4BCD /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		FC56708F249BDC3000AA4BCD /* MoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
 		FC567092249BEAD000AA4BCD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -62,18 +62,8 @@
 		454751B41F19856F002AC524 = {
 			isa = PBXGroup;
 			children = (
-				FC567092249BEAD000AA4BCD /* LoginViewController.swift */,
-				FC566A19249D0D9800D5F7E2 /* RegistrationViewController.swift */,
-				FC566A1A249D0D9800D5F7E2 /* RestrationViewController.xib */,
-				FC567093249BEAD000AA4BCD /* LoginViewController.xib */,
-				FC567086249BDB0B00AA4BCD /* ItemOneViewController.swift */,
-				FC567087249BDB0B00AA4BCD /* ItemOneViewController.xib */,
-				FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */,
-				FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */,
-				FC56708E249BDC3000AA4BCD /* MoreViewController.swift */,
-				FC56708F249BDC3000AA4BCD /* MoreViewController.xib */,
-				FC5C1D66249A621B0057F386 /* FavouriteViewController.xib */,
-				FC5C1D68249A6FE60057F386 /* FavouriteViewController.swift */,
+				FC566A1E249D31F400D5F7E2 /* xibs */,
+				FC566A1D249D318700D5F7E2 /* Controllers */,
 				454751BF1F19856F002AC524 /* HamburgerMenuBlog */,
 				454751BE1F19856F002AC524 /* Products */,
 			);
@@ -91,13 +81,39 @@
 			isa = PBXGroup;
 			children = (
 				454751C01F19856F002AC524 /* AppDelegate.swift */,
-				454751C21F19856F002AC524 /* ViewController.swift */,
 				454751C41F19856F002AC524 /* Main.storyboard */,
 				454751C71F19856F002AC524 /* Assets.xcassets */,
 				454751C91F19856F002AC524 /* LaunchScreen.storyboard */,
 				454751CC1F19856F002AC524 /* Info.plist */,
 			);
 			path = HamburgerMenuBlog;
+			sourceTree = "<group>";
+		};
+		FC566A1D249D318700D5F7E2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC567092249BEAD000AA4BCD /* LoginViewController.swift */,
+				FC566A19249D0D9800D5F7E2 /* RegistrationViewController.swift */,
+				FC567086249BDB0B00AA4BCD /* ItemOneViewController.swift */,
+				FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */,
+				FC56708E249BDC3000AA4BCD /* MoreViewController.swift */,
+				FC5C1D68249A6FE60057F386 /* FavouriteViewController.swift */,
+				454751C21F19856F002AC524 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FC566A1E249D31F400D5F7E2 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				FC566A1A249D0D9800D5F7E2 /* RestrationViewController.xib */,
+				FC567093249BEAD000AA4BCD /* LoginViewController.xib */,
+				FC567087249BDB0B00AA4BCD /* ItemOneViewController.xib */,
+				FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */,
+				FC56708F249BDC3000AA4BCD /* MoreViewController.xib */,
+				FC5C1D66249A621B0057F386 /* FavouriteViewController.xib */,
+			);
+			path = xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +148,7 @@
 				TargetAttributes = {
 					454751BC1F19856F002AC524 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = ZG53357D46;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -312,11 +327,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZG53357D46;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HamburgerMenuBlog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yayitserica.HamburgerMenuBlog;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yayitserica.HamburgerMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -325,11 +342,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZG53357D46;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HamburgerMenuBlog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yayitserica.HamburgerMenuBlog;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yayitserica.HamburgerMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
