@@ -89,6 +89,39 @@ class ViewController: UIViewController, UITabBarDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         stackView.addBackground(color: .white)
         tabBar.delegate = self
+        
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
+            let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
+                
+            leftSwipe.direction = .left
+            rightSwipe.direction = .right
+
+            view.addGestureRecognizer(leftSwipe)
+            view.addGestureRecognizer(rightSwipe)
+        }
+    
+    
+    @objc func handleSwipes(_ sender:UISwipeGestureRecognizer) {
+            
+        if (sender.direction == .left) {
+                print("Swipe Left")
+            stackLeading.constant = 0
+            stackTrailing.constant = 0
+            hamburgerMenuIsVisible = false
+        }
+    
+        if (sender.direction == .right) {
+            print("Swipe Right")
+            stackTrailing.constant = self.view.frame.size.width/2
+            hamburgerMenuIsVisible = true
+
+        }
+        
+        UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
+            self.view.layoutIfNeeded()
+        }) { (animationComplete) in
+            print("The animation is complete!")
+        }
     }
 
 
