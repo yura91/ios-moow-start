@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HamburgerMenuBlog.xcodeproj">
+      location = "self:/Users/yurec/Documents/Hamburger-Menu-Blog/Insode0ios.xcodeproj">
    </FileRef>
 </Workspace>

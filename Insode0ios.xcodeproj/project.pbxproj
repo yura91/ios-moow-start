@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		454751BD1F19856F002AC524 /* HamburgerMenuBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamburgerMenuBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		454751BD1F19856F002AC524 /* Insode0ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insode0ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		454751C01F19856F002AC524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		454751C21F19856F002AC524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		454751C51F19856F002AC524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 			children = (
 				FC566A1E249D31F400D5F7E2 /* xibs */,
 				FC566A1D249D318700D5F7E2 /* Controllers */,
-				454751BF1F19856F002AC524 /* HamburgerMenuBlog */,
+				454751BF1F19856F002AC524 /* Insode0ios */,
 				454751BE1F19856F002AC524 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,12 +72,12 @@
 		454751BE1F19856F002AC524 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				454751BD1F19856F002AC524 /* HamburgerMenuBlog.app */,
+				454751BD1F19856F002AC524 /* Insode0ios.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		454751BF1F19856F002AC524 /* HamburgerMenuBlog */ = {
+		454751BF1F19856F002AC524 /* Insode0ios */ = {
 			isa = PBXGroup;
 			children = (
 				454751C01F19856F002AC524 /* AppDelegate.swift */,
@@ -86,7 +86,7 @@
 				454751C91F19856F002AC524 /* LaunchScreen.storyboard */,
 				454751CC1F19856F002AC524 /* Info.plist */,
 			);
-			path = HamburgerMenuBlog;
+			path = Insode0ios;
 			sourceTree = "<group>";
 		};
 		FC566A1D249D318700D5F7E2 /* Controllers */ = {
@@ -119,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		454751BC1F19856F002AC524 /* HamburgerMenuBlog */ = {
+		454751BC1F19856F002AC524 /* Insode0ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 454751CF1F19856F002AC524 /* Build configuration list for PBXNativeTarget "HamburgerMenuBlog" */;
+			buildConfigurationList = 454751CF1F19856F002AC524 /* Build configuration list for PBXNativeTarget "Insode0ios" */;
 			buildPhases = (
 				454751B91F19856F002AC524 /* Sources */,
 				454751BA1F19856F002AC524 /* Frameworks */,
@@ -131,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = HamburgerMenuBlog;
+			name = Insode0ios;
 			productName = HamburgerMenuBlog;
-			productReference = 454751BD1F19856F002AC524 /* HamburgerMenuBlog.app */;
+			productReference = 454751BD1F19856F002AC524 /* Insode0ios.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,7 +152,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 454751B81F19856F002AC524 /* Build configuration list for PBXProject "HamburgerMenuBlog" */;
+			buildConfigurationList = 454751B81F19856F002AC524 /* Build configuration list for PBXProject "Insode0ios" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -166,7 +166,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				454751BC1F19856F002AC524 /* HamburgerMenuBlog */,
+				454751BC1F19856F002AC524 /* Insode0ios */,
 			);
 		};
 /* End PBXProject section */
@@ -329,7 +329,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = HamburgerMenuBlog/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Insode0ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yayitserica.HamburgerMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -344,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = HamburgerMenuBlog/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Insode0ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yayitserica.HamburgerMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,7 +356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		454751B81F19856F002AC524 /* Build configuration list for PBXProject "HamburgerMenuBlog" */ = {
+		454751B81F19856F002AC524 /* Build configuration list for PBXProject "Insode0ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				454751CD1F19856F002AC524 /* Debug */,
@@ -365,7 +365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		454751CF1F19856F002AC524 /* Build configuration list for PBXNativeTarget "HamburgerMenuBlog" */ = {
+		454751CF1F19856F002AC524 /* Build configuration list for PBXNativeTarget "Insode0ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				454751D01F19856F002AC524 /* Debug */,
