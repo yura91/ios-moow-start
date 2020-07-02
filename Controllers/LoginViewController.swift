@@ -20,34 +20,25 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(json_Response_Received(_:)), name:NSNotification.Name(rawValue: "JSON_RESPONSE_RECEIVED"), object: nil)
 
         // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @objc func json_Response_Received(_ notification:Notification) {
+    let userProfileController = UserProfileController(nibName: "UserProfileController", bundle: nil)
+    self.navigationController?.pushViewController(userProfileController, animated: true)
     }
-    */
-
+    
     @IBAction func onLoginClick(_ sender: UIButton) {
         
         if let email = emailTextField.text, let password = passwordTextField.text {
          if(isValidEmail(email)){
-            
-        let login = Login1(email: email, password: password)
-        AF.request("https://inside4sandbox.ikiev.biz/Auth_API/check_login",
-                   method: .post,
-                   parameters: login).response { response in
-            debugPrint(response)
-          }}
+            NetworkApi.login(email: email, password: password)
+        }
             
         }
+        
     }
     
     @IBAction func onClickRegister(_ sender: UIButton) {

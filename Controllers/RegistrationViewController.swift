@@ -21,27 +21,27 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+NotificationCenter.default.addObserver(self, selector: #selector(json_Response_Received(_:)),
+                                       name:NSNotification.Name(rawValue: "JSON_RESPONSE_RECEIVEDReg"), object: nil)
         // Do any additional setup after loading the view.
     }
 
     
     @IBAction func onRegisterClick(_ sender: UIButton) {
         if let email = emailTextField.text, let password = passwordTextField.text {
-            if(isValidEmail(email)) {
-         let login = Login(email: email, password: password)
-        
-
-        AF.request("https://inside4sandbox.ikiev.biz/Auth_API/check_reg",
-                   method: .post,
-                   parameters: login).response { response in
-            debugPrint(response)
-          }
-        }
+            if(isValidEmail(email)){
+                       NetworkApi.register(email: email, password: password)
+                   }
             
         }
         
     }
+    
+    @objc func json_Response_Received(_ notification:Notification) {
+    let userProfileController = UserProfileController(nibName: "UserProfileController", bundle: nil)
+    self.navigationController?.pushViewController(userProfileController, animated: true)
+    }
+    
     
     func isValidEmail(_ email: String) -> Bool {
        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"

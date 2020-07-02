@@ -59,7 +59,7 @@ class ViewController: UIViewController, UITabBarDelegate {
     
 
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        if let ind = tabBar.items?.index(of: item){
+        if let ind = tabBar.items?.firstIndex(of: item){
             switch ind {
             case 0:
                 print(ind)
