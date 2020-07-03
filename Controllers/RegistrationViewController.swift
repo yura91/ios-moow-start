@@ -42,6 +42,10 @@ NotificationCenter.default.addObserver(self, selector: #selector(json_Response_R
     self.navigationController?.pushViewController(userProfileController, animated: true)
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     
     func isValidEmail(_ email: String) -> Bool {
        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"

@@ -13,7 +13,7 @@ class UserProfileController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        NetworkApi.updateProfile()
         // Do any additional setup after loading the view.
     }
 

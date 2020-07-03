@@ -41,6 +41,10 @@ class LoginViewController: UIViewController {
         
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     @IBAction func onClickRegister(_ sender: UIButton) {
         let registerController = RegistrationViewController(nibName: "RestrationViewController", bundle: nil)
         self.navigationController?.pushViewController(registerController, animated: true)
