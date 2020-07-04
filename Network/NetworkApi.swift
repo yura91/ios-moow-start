@@ -67,13 +67,8 @@ class NetworkApi : NSObject{
                     case .success(let value):
                         if let json = value as? [String: Any] {
                             print(json)
-                            if let new_token = json["new_token"]{
-                            print(new_token)
-                            defaults.set(new_token, forKey: "new_token")
-                            }
-                            if let email = json["email"]{
-                            print(email)
-                            }
+                            NotificationCenter.default.post(name: Notification.Name(rawValue:"JSON_PROFILE_RECEIVED"),
+                                                                                           object: nil, userInfo: ["json":json])
                             }
                     case .failure(let error):
                         print(error)

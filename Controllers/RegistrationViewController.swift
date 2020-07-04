@@ -24,6 +24,7 @@ class RegistrationViewController: UIViewController {
 NotificationCenter.default.addObserver(self, selector: #selector(json_Response_Received(_:)),
                                        name:NSNotification.Name(rawValue: "JSON_RESPONSE_RECEIVEDReg"), object: nil)
         // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
     }
 
     
