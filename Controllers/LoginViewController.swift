@@ -32,7 +32,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(json_Response_Received(_:)), name:NSNotification.Name(rawValue: "JSON_RESPONSE_RECEIVED"), object: nil)
         self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
@@ -51,6 +50,10 @@ class LoginViewController: UIViewController {
             
         }
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(json_Response_Received(_:)), name:NSNotification.Name(rawValue: "JSON_RESPONSE_RECEIVED"), object: nil)
     }
     
     override func viewDidDisappear(_ animated: Bool) {

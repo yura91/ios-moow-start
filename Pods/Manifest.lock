@@ -1,16 +1,21 @@
 PODS:
-  - Alamofire (5.2.1)
+  - Alamofire (5.0.5)
+  - AlamofireNetworkActivityLogger (3.0.0):
+    - Alamofire (~> 5.0.0-rc.2)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.2)
+  - Alamofire (~> 5.0.0-rc.2)
+  - AlamofireNetworkActivityLogger (~> 3.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AlamofireNetworkActivityLogger
 
 SPEC CHECKSUMS:
-  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  AlamofireNetworkActivityLogger: 94e8a7d454a4a9800cef1d0c1d3699754493684b
 
-PODFILE CHECKSUM: d3757a11df8d4271b8566fb5dadb1a73946021bd
+PODFILE CHECKSUM: 9e9f77a329844484357d61d9e705daff0614eea1
 
 COCOAPODS: 1.8.4

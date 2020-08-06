@@ -6,6 +6,7 @@ target 'Insode0ios' do
   use_frameworks!
 
   # Pods for Insode0ios
-pod 'Alamofire', '~> 5.2'
+pod 'Alamofire', '~> 5.0.0-rc.2'
+pod 'AlamofireNetworkActivityLogger', '~> 3.0'
 
 end

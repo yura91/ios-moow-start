@@ -23,6 +23,11 @@ class UserProfileController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func onSaveClick(_ sender: UIButton) {
+        if let name = nameField.text, let phone = phoneField.text, let email = emailField.text{
+        NetworkApi.saveProfile(name: name, phone: phone, email: email)
+        }
+    }
     
     @objc func json_Response_Received(_ notification:Notification) {
         print(notification.userInfo ?? "")
