@@ -17,7 +17,7 @@ func addBackground(color: UIColor) {
 }
 }
     
-class ViewController: UIViewController, UITabBarDelegate {
+class MainViewController: UIViewController, UITabBarDelegate {
     
     @IBOutlet weak var tabBar: UITabBar!
     @IBOutlet weak var stackLeading: NSLayoutConstraint!

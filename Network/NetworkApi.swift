@@ -67,7 +67,7 @@ class NetworkApi : NSObject{
                    }
     }
     
-    static func updateProfile(){
+    static func getProfile(){
         let inside4_session = defaults.string(forKey: "new_token")
         AF.request("https://inside4sandbox.ikiev.biz/Auth_API/user_row_json",
                          method: .get,
@@ -98,7 +98,7 @@ class NetworkApi : NSObject{
         
     }
     
-    static func saveProfile(name:String, phone:String, email:String){
+    static func updateProfile(name:String, phone:String, email:String){
 	        let csrf_token = defaults.string(forKey: "csrf_token")
             let inside4_session = defaults.string(forKey: "new_token")
         AF.request("https://inside4sandbox.ikiev.biz/Auth_API/update_user_data",

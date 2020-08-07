@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3CD06206C99361C513910FF4 /* Pods_Insode0ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 628749C8A5ACD1B46F0D8EDD /* Pods_Insode0ios.framework */; };
 		454751C11F19856F002AC524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454751C01F19856F002AC524 /* AppDelegate.swift */; };
-		454751C31F19856F002AC524 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454751C21F19856F002AC524 /* ViewController.swift */; };
+		454751C31F19856F002AC524 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454751C21F19856F002AC524 /* MainViewController.swift */; };
 		454751C61F19856F002AC524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454751C41F19856F002AC524 /* Main.storyboard */; };
 		454751C81F19856F002AC524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454751C71F19856F002AC524 /* Assets.xcassets */; };
 		454751CB1F19856F002AC524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454751C91F19856F002AC524 /* LaunchScreen.storyboard */; };
@@ -34,7 +34,7 @@
 		2C4FEE9234A4E272767015B4 /* Pods-Insode0ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insode0ios.release.xcconfig"; path = "Target Support Files/Pods-Insode0ios/Pods-Insode0ios.release.xcconfig"; sourceTree = "<group>"; };
 		454751BD1F19856F002AC524 /* Insode0ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insode0ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		454751C01F19856F002AC524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		454751C21F19856F002AC524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		454751C21F19856F002AC524 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		454751C51F19856F002AC524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		454751C71F19856F002AC524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		454751CA1F19856F002AC524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -129,9 +129,8 @@
 				FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */,
 				FC56708E249BDC3000AA4BCD /* MoreViewController.swift */,
 				FC5C1D68249A6FE60057F386 /* FavouriteViewController.swift */,
-				454751C21F19856F002AC524 /* ViewController.swift */,
+				454751C21F19856F002AC524 /* MainViewController.swift */,
 				FC2756F324ACFF180061E276 /* UserProfileController.swift */,
-				FC2756F424ACFF180061E276 /* UserProfileController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -143,6 +142,7 @@
 				FC567093249BEAD000AA4BCD /* LoginViewController.xib */,
 				FC567087249BDB0B00AA4BCD /* ItemOneViewController.xib */,
 				FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */,
+				FC2756F424ACFF180061E276 /* UserProfileController.xib */,
 				FC56708F249BDC3000AA4BCD /* MoreViewController.xib */,
 				FC5C1D66249A621B0057F386 /* FavouriteViewController.xib */,
 			);
@@ -285,7 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC567094249BEAD000AA4BCD /* LoginViewController.swift in Sources */,
-				454751C31F19856F002AC524 /* ViewController.swift in Sources */,
+				454751C31F19856F002AC524 /* MainViewController.swift in Sources */,
 				FC5C1D69249A6FE60057F386 /* FavouriteViewController.swift in Sources */,
 				FC566A1B249D0D9800D5F7E2 /* RegistrationViewController.swift in Sources */,
 				FC56708C249BDB9100AA4BCD /* ItemTwoViewController.swift in Sources */,

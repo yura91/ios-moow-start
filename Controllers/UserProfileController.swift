@@ -18,14 +18,14 @@ class UserProfileController: UIViewController {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         NotificationCenter.default.addObserver(self, selector: #selector(json_Response_Received(_:)), name:NSNotification.Name(rawValue: "JSON_PROFILE_RECEIVED"), object: nil)
-        NetworkApi.updateProfile()
+        NetworkApi.getProfile()
         
         // Do any additional setup after loading the view.
     }
     
     @IBAction func onSaveClick(_ sender: UIButton) {
         if let name = nameField.text, let phone = phoneField.text, let email = emailField.text{
-        NetworkApi.saveProfile(name: name, phone: phone, email: email)
+        NetworkApi.updateProfile(name: name, phone: phone, email: email)
         }
     }
     
