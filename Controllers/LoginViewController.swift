@@ -30,10 +30,11 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(loginResponseReceived(_:)), name:NSNotification.Name(rawValue: "LOGIN_RESPONSE_RECEIVED"), object: nil)
     }
     
     @objc func loginResponseReceived(_ notification:Notification) {
@@ -51,11 +52,7 @@ class LoginViewController: UIViewController {
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        NotificationCenter.default.addObserver(self, selector: #selector(loginResponseReceived(_:)), name:NSNotification.Name(rawValue: "LOGIN_RESPONSE_RECEIVED"), object: nil)
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
+    deinit {
         NotificationCenter.default.removeObserver(self)
     }
     
