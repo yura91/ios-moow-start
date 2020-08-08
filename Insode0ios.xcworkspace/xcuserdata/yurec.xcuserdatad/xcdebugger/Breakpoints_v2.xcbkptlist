@@ -48,7 +48,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
             endingLineNumber = "41"
-            landmarkName = "json_Response_Received(_:)"
+            landmarkName = "loginResponseReceived(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -174,8 +174,8 @@
             filePath = "Network/NetworkApi.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "updateProfile(name:phone:email:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -208,7 +208,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
             endingLineNumber = "35"
-            landmarkName = "json_Response_Received(_:)"
+            landmarkName = "getProfileResponseReceived(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -238,7 +238,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
             endingLineNumber = "40"
-            landmarkName = "json_Response_Received(_:)"
+            landmarkName = "getProfileResponseReceived(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

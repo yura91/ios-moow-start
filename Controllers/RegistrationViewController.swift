@@ -16,31 +16,31 @@ struct Login: Encodable {
 
 
 class RegistrationViewController: UIViewController {
-
+    
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-NotificationCenter.default.addObserver(self, selector: #selector(json_Response_Received(_:)),
-                                       name:NSNotification.Name(rawValue: "JSON_RESPONSE_RECEIVEDReg"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(registrationResponseReceived(_:)),
+                                               name:NSNotification.Name(rawValue: "REGISTRATION_RESPONSE_RECEIVED"), object: nil)
         // Do any additional setup after loading the view.
         self.hideKeyboardWhenTappedAround()
     }
-
+    
     
     @IBAction func onRegisterClick(_ sender: UIButton) {
         if let email = emailTextField.text, let password = passwordTextField.text {
             if(isValidEmail(email)){
-                       NetworkApi.register(email: email, password: password)
-                   }
+                NetworkApi.register(email: email, password: password)
+            }
             
         }
         
     }
     
-    @objc func json_Response_Received(_ notification:Notification) {
-    let userProfileController = UserProfileController(nibName: "UserProfileController", bundle: nil)
-    self.navigationController?.pushViewController(userProfileController, animated: true)
+    @objc func registrationResponseReceived(_ notification:Notification) {
+        let userProfileController = UserProfileController(nibName: "UserProfileController", bundle: nil)
+        self.navigationController?.pushViewController(userProfileController, animated: true)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -49,11 +49,11 @@ NotificationCenter.default.addObserver(self, selector: #selector(json_Response_R
     
     
     func isValidEmail(_ email: String) -> Bool {
-       let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
-       let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-       return emailPred.evaluate(with: email)
-   }
-
-  
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
+    }
+    
+    
 }

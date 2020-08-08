@@ -17,7 +17,7 @@ class UserProfileController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-        NotificationCenter.default.addObserver(self, selector: #selector(json_Response_Received(_:)), name:NSNotification.Name(rawValue: "JSON_PROFILE_RECEIVED"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(getProfileResponseReceived(_:)), name:NSNotification.Name(rawValue: "GET_PROFILE_RECEIVED"), object: nil)
         NetworkApi.getProfile()
         
         // Do any additional setup after loading the view.
@@ -29,7 +29,7 @@ class UserProfileController: UIViewController {
         }
     }
     
-    @objc func json_Response_Received(_ notification:Notification) {
+    @objc func getProfileResponseReceived(_ notification:Notification) {
         print(notification.userInfo ?? "")
         if let dict = notification.userInfo as NSDictionary? {
             if let json = dict["json"] as? [String: Any]{

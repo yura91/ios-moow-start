@@ -20,14 +20,14 @@ extension UIViewController {
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
-
+    
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
 }
 
 class LoginViewController: UIViewController {
-
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
@@ -36,24 +36,23 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @objc func json_Response_Received(_ notification:Notification) {
-    let userProfileController = UserProfileController(nibName: "UserProfileController", bundle: nil)
-    self.navigationController?.pushViewController(userProfileController, animated: true)
+    @objc func loginResponseReceived(_ notification:Notification) {
+        let userProfileController = UserProfileController(nibName: "UserProfileController", bundle: nil)
+        self.navigationController?.pushViewController(userProfileController, animated: true)
     }
     
     @IBAction func onLoginClick(_ sender: UIButton) {
         
         if let email = emailTextField.text, let password = passwordTextField.text {
-         if(isValidEmail(email)){
-            NetworkApi.login(email: email, password: password)
-        }
+            if(isValidEmail(email)){
+                NetworkApi.login(email: email, password: password)
+            }
             
         }
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        NotificationCenter.default.addObserver(self, selector: #selector(json_Response_Received(_:)), name:NSNotification.Name(rawValue: "JSON_RESPONSE_RECEIVED"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(loginResponseReceived(_:)), name:NSNotification.Name(rawValue: "LOGIN_RESPONSE_RECEIVED"), object: nil)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -67,7 +66,7 @@ class LoginViewController: UIViewController {
     
     func isValidEmail(_ email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
+        
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
     }

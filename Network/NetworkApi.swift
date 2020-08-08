@@ -9,16 +9,6 @@
 import Foundation
 import Alamofire
 
-extension DataRequest {
-   public func debugLog() -> Self {
-    
-         debugPrint(self)
-     
-      return self
-   }
-}
-
-
 class NetworkApi : NSObject{
     private static let defaults = UserDefaults.standard
     
@@ -34,7 +24,7 @@ class NetworkApi : NSObject{
                                    if let new_token = json["new_token"]{
                                        print(new_token)
                                        defaults.set(new_token, forKey: "new_token")
-                                       NotificationCenter.default.post(name: Notification.Name(rawValue:"JSON_RESPONSE_RECEIVED"),
+                                       NotificationCenter.default.post(name: Notification.Name(rawValue:"LOGIN_RESPONSE_RECEIVED"),
                                                                     object: nil, userInfo: ["token":new_token])
                                    }
                                }
@@ -57,7 +47,7 @@ class NetworkApi : NSObject{
                                    if let new_token = json["new_token"]{
                                        print(new_token)
                                        defaults.set(new_token, forKey: "new_token")
-                                       NotificationCenter.default.post(name: Notification.Name(rawValue:"JSON_RESPONSE_RECEIVEDReg"),
+                                       NotificationCenter.default.post(name: Notification.Name(rawValue:"REGISTRATION_RESPONSE_RECEIVED"),
                                                                     object: nil, userInfo: ["token":new_token])
                                    }
                                }
@@ -88,7 +78,7 @@ class NetworkApi : NSObject{
                                                                   defaults.set(new_token, forKey: "new_token")
                             }
                             
-                            NotificationCenter.default.post(name: Notification.Name(rawValue:"JSON_PROFILE_RECEIVED"),
+                            NotificationCenter.default.post(name: Notification.Name(rawValue:"GET_PROFILE_RECEIVED"),
                                                                                            object: nil, userInfo: ["json":json])
                             }
                     case .failure(let error):
@@ -115,7 +105,7 @@ class NetworkApi : NSObject{
                                                                                           defaults.set(new_token, forKey: "new_token")
 
                                                                                       }
-                                                    NotificationCenter.default.post(name: Notification.Name(rawValue:"JSON_PROFILE_RECEIVED"),
+                                                    NotificationCenter.default.post(name: Notification.Name(rawValue:"UPDATE_PROFILE_RECEIVED"),
                                                                                                                    object: nil, userInfo: ["json":json])
                                                     }
                                             case .failure(let error):
