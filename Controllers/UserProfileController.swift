@@ -9,7 +9,7 @@
 import UIKit
 
 class UserProfileController: UIViewController {
-
+    
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var phoneField: UITextField!
     @IBOutlet weak var nameField: UITextField!
@@ -18,6 +18,8 @@ class UserProfileController: UIViewController {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         NotificationCenter.default.addObserver(self, selector: #selector(getProfileResponseReceived(_:)), name:NSNotification.Name(rawValue: "GET_PROFILE_RECEIVED"), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(updateProfileResponseReceived(_:)), name:NSNotification.Name(rawValue: "UPDATE_PROFILE_RECEIVED"), object: nil)
         NetworkApi.getProfile()
         
         // Do any additional setup after loading the view.
@@ -25,7 +27,7 @@ class UserProfileController: UIViewController {
     
     @IBAction func onSaveClick(_ sender: UIButton) {
         if let name = nameField.text, let phone = phoneField.text, let email = emailField.text{
-        NetworkApi.updateProfile(name: name, phone: phone, email: email)
+            NetworkApi.updateProfile(name: name, phone: phone, email: email)
         }
     }
     
@@ -40,5 +42,9 @@ class UserProfileController: UIViewController {
             }
         }
     }
-
+    
+    @objc func updateProfileResponseReceived(_ notification:Notification){
+        NetworkApi.getProfile()
+    }
+    
 }

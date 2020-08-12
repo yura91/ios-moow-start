@@ -14,73 +14,73 @@ class NetworkApi : NSObject{
     
     static func login(email: String, password: String){
         let login = Login1(email: email, password: password)
-         AF.request("https://inside4sandbox.ikiev.biz/Auth_API/check_login",
-                          method: .post,
-                          parameters: login).responseJSON{ response in
-                           switch response.result {
-                           case .success(let value):
-                               if let json = value as? [String: Any] {
-                                   print(json)
-                                   if let new_token = json["new_token"]{
-                                       print(new_token)
-                                       defaults.set(new_token, forKey: "new_token")
-                                       NotificationCenter.default.post(name: Notification.Name(rawValue:"LOGIN_RESPONSE_RECEIVED"),
-                                                                    object: nil, userInfo: ["token":new_token])
-                                   }
-                               }
-                           case .failure(let error):
-                               print(error)
-                           }
+        AF.request("https://inside4sandbox.ikiev.biz/Auth_API/check_login",
+                   method: .post,
+                   parameters: login).responseJSON{ response in
+                    switch response.result {
+                    case .success(let value):
+                        if let json = value as? [String: Any] {
+                            print(json)
+                            if let new_token = json["new_token"]{
+                                print(new_token)
+                                defaults.set(new_token, forKey: "new_token")
+                                NotificationCenter.default.post(name: Notification.Name(rawValue:"LOGIN_RESPONSE_RECEIVED"),
+                                                                object: nil, userInfo: ["token":new_token])
+                            }
+                        }
+                    case .failure(let error):
+                        print(error)
+                    }
         }
         
     }
     
     static func register(email: String, password: String){
         let login = Login1(email: email, password: password)
-         AF.request("https://inside4sandbox.ikiev.biz/Auth_API/check_reg",
-                          method: .post,
+        AF.request("https://inside4sandbox.ikiev.biz/Auth_API/check_reg",
+                   method: .post,
                    parameters: login).responseJSON{ response in
-                           switch response.result {
-                           case .success(let value):
-                               if let json = value as? [String: Any] {
-                                   print(json)
-                                   if let new_token = json["new_token"]{
-                                       print(new_token)
-                                       defaults.set(new_token, forKey: "new_token")
-                                       NotificationCenter.default.post(name: Notification.Name(rawValue:"REGISTRATION_RESPONSE_RECEIVED"),
-                                                                    object: nil, userInfo: ["token":new_token])
-                                   }
-                               }
-                           case .failure(let error):
-                               print(error)
-                           }
-                   }
+                    switch response.result {
+                    case .success(let value):
+                        if let json = value as? [String: Any] {
+                            print(json)
+                            if let new_token = json["new_token"]{
+                                print(new_token)
+                                defaults.set(new_token, forKey: "new_token")
+                                NotificationCenter.default.post(name: Notification.Name(rawValue:"REGISTRATION_RESPONSE_RECEIVED"),
+                                                                object: nil, userInfo: ["token":new_token])
+                            }
+                        }
+                    case .failure(let error):
+                        print(error)
+                    }
+        }
     }
     
     static func getProfile(){
         let inside4_session = defaults.string(forKey: "new_token")
         AF.request("https://inside4sandbox.ikiev.biz/Auth_API/user_row_json",
-                         method: .get,
-                         parameters: ["inside4_session":inside4_session]).responseJSON{ response in
+                   method: .get,
+                   parameters: ["inside4_session":inside4_session]).responseJSON{ response in
                     
                     switch response.result {
                     case .success(let value):
                         if let json = value as? [String: Any] {
                             print(json)
                             if let csrf_token = json["csrf_token"]{
-                            print(csrf_token)
-                            defaults.set(csrf_token, forKey: "csrf_token")
-
+                                print(csrf_token)
+                                defaults.set(csrf_token, forKey: "csrf_token")
+                                
                             }
                             
                             if let new_token = json["new_token"]{
-                                                                  print(new_token)
-                                                                  defaults.set(new_token, forKey: "new_token")
+                                print(new_token)
+                                defaults.set(new_token, forKey: "new_token")
                             }
                             
                             NotificationCenter.default.post(name: Notification.Name(rawValue:"GET_PROFILE_RECEIVED"),
-                                                                                           object: nil, userInfo: ["json":json])
-                            }
+                                                            object: nil, userInfo: ["json":json])
+                        }
                     case .failure(let error):
                         print(error)
                     }
@@ -89,29 +89,29 @@ class NetworkApi : NSObject{
     }
     
     static func updateProfile(name:String, phone:String, email:String){
-	        let csrf_token = defaults.string(forKey: "csrf_token")
-            let inside4_session = defaults.string(forKey: "new_token")
+        let csrf_token = defaults.string(forKey: "csrf_token")
+        let inside4_session = defaults.string(forKey: "new_token")
         AF.request("https://inside4sandbox.ikiev.biz/Auth_API/update_user_data",
-
-                                method: .post,
-                                parameters: ["inside4_session":inside4_session!, "csrf_token":csrf_token!, "name":name, "email":email, "phone":phone]).responseJSON{ response in
-                                            
-                                            switch response.result {
-                                            case .success(let value):
-                                                if let json = value as? [String: Any] {
-                                                    print(json)
-                                                    if let new_token = json["new_token"]{
-                                                                                          print(new_token)
-                                                                                          defaults.set(new_token, forKey: "new_token")
-
-                                                                                      }
-                                                    NotificationCenter.default.post(name: Notification.Name(rawValue:"UPDATE_PROFILE_RECEIVED"),
-                                                                                                                   object: nil, userInfo: ["json":json])
-                                                    }
-                                            case .failure(let error):
-                                                print(error)
-                                            }
-                                }
+                   
+                   method: .post,
+                   parameters: ["inside4_session":inside4_session!, "csrf_token":csrf_token!, "name":name, "email":email, "phone":phone]).responseJSON{ response in
+                    
+                    switch response.result {
+                    case .success(let value):
+                        if let json = value as? [String: Any] {
+                            print(json)
+                            if let new_token = json["new_token"]{
+                                print(new_token)
+                                defaults.set(new_token, forKey: "new_token")
+                                
+                            }
+                            NotificationCenter.default.post(name: Notification.Name(rawValue:"UPDATE_PROFILE_RECEIVED"),
+                                                            object: nil, userInfo: ["json":json])
+                        }
+                    case .failure(let error):
+                        print(error)
+                    }
+        }
     }
-
+    
 }
