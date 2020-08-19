@@ -115,15 +115,22 @@ class NetworkApi : NSObject{
         }
     }
     
-    static func getProducts(pageNumber: Int){
+    static func getFeed(pageNumber: Int){
         let inside4_session = defaults.string(forKey: "new_token")
         AF.request("https://inside4sandbox.ikiev.biz/Info_API/feed",
-                   
                    method: .post,
-                   parameters: ["inside4_session":inside4_session!, "page": pageNumber]).responseDecodable(of: Products.self) { response in
-                    guard let products = response.value else { return }
-                    defaults.set(products.newToken, forKey: "new_token")
+                   parameters: ["inside4_session":inside4_session!, "page": pageNumber]).responseDecodable(of: Feed.self) { response in
+                    switch response.result {
+                    case .success(let value):
+                        let products = value
+                        defaults.set(products.newToken, forKey: "new_token")
+                        NotificationCenter.default.post(name: Notification.Name(rawValue:"FEED_RECEIVED"),
+                                                        object: nil, userInfo: ["feed":products])
+                        
+                    case .failure(let error):
+                        print(error)
+                    }
         }
+        
     }
-    
 }

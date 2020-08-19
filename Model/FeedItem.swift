@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Product: Decodable {
+class FeedItem: Decodable {
     var content_id: String
     var content_desc: String
     var content_html: String

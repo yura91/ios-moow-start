@@ -8,8 +8,8 @@
 
 import Foundation
 
-class Products: Decodable {
-    let products: [Product]
+class Feed: Decodable {
+    let products: [FeedItem]
     let newToken: String
     
     enum CodingKeys: String, CodingKey {

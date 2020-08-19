@@ -18,18 +18,18 @@
 		FC566A1B249D0D9800D5F7E2 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC566A19249D0D9800D5F7E2 /* RegistrationViewController.swift */; };
 		FC566A1C249D0D9800D5F7E2 /* RestrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC566A1A249D0D9800D5F7E2 /* RestrationViewController.xib */; };
 		FC567088249BDB0B00AA4BCD /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC567086249BDB0B00AA4BCD /* ProductsViewController.swift */; };
-		FC567089249BDB0B00AA4BCD /* ItemOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC567087249BDB0B00AA4BCD /* ItemOneViewController.xib */; };
+		FC567089249BDB0B00AA4BCD /* ProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC567087249BDB0B00AA4BCD /* ProductsViewController.xib */; };
 		FC56708C249BDB9100AA4BCD /* ItemTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */; };
 		FC56708D249BDB9100AA4BCD /* ItemTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */; };
 		FC567090249BDC3000AA4BCD /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC56708E249BDC3000AA4BCD /* MoreViewController.swift */; };
 		FC567091249BDC3000AA4BCD /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC56708F249BDC3000AA4BCD /* MoreViewController.xib */; };
 		FC567094249BEAD000AA4BCD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC567092249BEAD000AA4BCD /* LoginViewController.swift */; };
 		FC567095249BEAD000AA4BCD /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC567093249BEAD000AA4BCD /* LoginViewController.xib */; };
-		FC5B92C224EC14F9006087F9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5B92C124EC14F9006087F9 /* Product.swift */; };
+		FC5B92C224EC14F9006087F9 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5B92C124EC14F9006087F9 /* FeedItem.swift */; };
 		FC5C1D67249A621B0057F386 /* FavouriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC5C1D66249A621B0057F386 /* FavouriteViewController.xib */; };
 		FC5C1D69249A6FE60057F386 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C1D68249A6FE60057F386 /* FavouriteViewController.swift */; };
 		FC5FAF3A24AE3E4500BD7A94 /* NetworkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5FAF3924AE3E4500BD7A94 /* NetworkApi.swift */; };
-		FC62BC6224ED51F800A50DD5 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62BC6124ED51F800A50DD5 /* Products.swift */; };
+		FC62BC6224ED51F800A50DD5 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62BC6124ED51F800A50DD5 /* Feed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,18 +48,18 @@
 		FC566A19249D0D9800D5F7E2 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		FC566A1A249D0D9800D5F7E2 /* RestrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestrationViewController.xib; sourceTree = "<group>"; };
 		FC567086249BDB0B00AA4BCD /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
-		FC567087249BDB0B00AA4BCD /* ItemOneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemOneViewController.xib; sourceTree = "<group>"; };
+		FC567087249BDB0B00AA4BCD /* ProductsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsViewController.xib; sourceTree = "<group>"; };
 		FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTwoViewController.swift; sourceTree = "<group>"; };
 		FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTwoViewController.xib; sourceTree = "<group>"; };
 		FC56708E249BDC3000AA4BCD /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		FC56708F249BDC3000AA4BCD /* MoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
 		FC567092249BEAD000AA4BCD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FC567093249BEAD000AA4BCD /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		FC5B92C124EC14F9006087F9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FC5B92C124EC14F9006087F9 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		FC5C1D66249A621B0057F386 /* FavouriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteViewController.xib; sourceTree = "<group>"; };
 		FC5C1D68249A6FE60057F386 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		FC5FAF3924AE3E4500BD7A94 /* NetworkApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApi.swift; sourceTree = "<group>"; };
-		FC62BC6124ED51F800A50DD5 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		FC62BC6124ED51F800A50DD5 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +145,7 @@
 			children = (
 				FC566A1A249D0D9800D5F7E2 /* RestrationViewController.xib */,
 				FC567093249BEAD000AA4BCD /* LoginViewController.xib */,
-				FC567087249BDB0B00AA4BCD /* ItemOneViewController.xib */,
+				FC567087249BDB0B00AA4BCD /* ProductsViewController.xib */,
 				FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */,
 				FC2756F424ACFF180061E276 /* UserProfileController.xib */,
 				FC56708F249BDC3000AA4BCD /* MoreViewController.xib */,
@@ -157,8 +157,8 @@
 		FC5B92C024EC1492006087F9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FC5B92C124EC14F9006087F9 /* Product.swift */,
-				FC62BC6124ED51F800A50DD5 /* Products.swift */,
+				FC5B92C124EC14F9006087F9 /* FeedItem.swift */,
+				FC62BC6124ED51F800A50DD5 /* Feed.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -237,7 +237,7 @@
 				FC5C1D67249A621B0057F386 /* FavouriteViewController.xib in Resources */,
 				454751CB1F19856F002AC524 /* LaunchScreen.storyboard in Resources */,
 				FC566A1C249D0D9800D5F7E2 /* RestrationViewController.xib in Resources */,
-				FC567089249BDB0B00AA4BCD /* ItemOneViewController.xib in Resources */,
+				FC567089249BDB0B00AA4BCD /* ProductsViewController.xib in Resources */,
 				454751C81F19856F002AC524 /* Assets.xcassets in Resources */,
 				FC567091249BDC3000AA4BCD /* MoreViewController.xib in Resources */,
 				FC56708D249BDB9100AA4BCD /* ItemTwoViewController.xib in Resources */,
@@ -303,11 +303,11 @@
 				FC5C1D69249A6FE60057F386 /* FavouriteViewController.swift in Sources */,
 				FC566A1B249D0D9800D5F7E2 /* RegistrationViewController.swift in Sources */,
 				FC56708C249BDB9100AA4BCD /* ItemTwoViewController.swift in Sources */,
-				FC5B92C224EC14F9006087F9 /* Product.swift in Sources */,
+				FC5B92C224EC14F9006087F9 /* FeedItem.swift in Sources */,
 				FC5FAF3A24AE3E4500BD7A94 /* NetworkApi.swift in Sources */,
 				FC567090249BDC3000AA4BCD /* MoreViewController.swift in Sources */,
 				FC567088249BDB0B00AA4BCD /* ProductsViewController.swift in Sources */,
-				FC62BC6224ED51F800A50DD5 /* Products.swift in Sources */,
+				FC62BC6224ED51F800A50DD5 /* Feed.swift in Sources */,
 				454751C11F19856F002AC524 /* AppDelegate.swift in Sources */,
 				FC2756F524ACFF180061E276 /* UserProfileController.swift in Sources */,
 			);

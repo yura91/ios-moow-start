@@ -67,8 +67,8 @@ class MainViewController: UIViewController, UITabBarDelegate {
                 self.navigationController?.pushViewController(favouriteController, animated: true)
             case 1:
                 print(ind)
-                let itemOneController = ProductsViewController(nibName: "ItemOneViewController", bundle: nil)
-                self.navigationController?.pushViewController(itemOneController, animated: true)
+                let productsController = ProductsViewController(nibName: "ProductsViewController", bundle: nil)
+                self.navigationController?.pushViewController(productsController, animated: true)
            case 2:
                 print(ind)
                 let itemTwoController = ItemTwoViewController(nibName: "ItemTwoViewController", bundle: nil)

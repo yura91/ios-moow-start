@@ -8,23 +8,16 @@
 
 import UIKit
 
-class ProductsViewController: UIViewController {
+class ProductsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NetworkApi.getProducts(pageNumber: 0)
+        NetworkApi.getFeed(pageNumber: 0)
+        NotificationCenter.default.addObserver(self, selector: #selector(showFeed(_:)), name:NSNotification.Name(rawValue: "FEED_RECEIVED"), object: nil)
         // Do any additional setup after loading the view.
     }
     
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    @objc func showFeed(_ notification:Notification){
+        
+    }
 }
