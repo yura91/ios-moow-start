@@ -12,6 +12,7 @@ import Alamofire
 class NetworkApi : NSObject{
     private static let defaults = UserDefaults.standard
     
+    
     static func login(email: String, password: String){
         let login = Login1(email: email, password: password)
         AF.request("https://inside4sandbox.ikiev.biz/Auth_API/check_login",
@@ -111,6 +112,17 @@ class NetworkApi : NSObject{
                     case .failure(let error):
                         print(error)
                     }
+        }
+    }
+    
+    static func getProducts(pageNumber: Int){
+        let inside4_session = defaults.string(forKey: "new_token")
+        AF.request("https://inside4sandbox.ikiev.biz/Info_API/feed",
+                   
+                   method: .post,
+                   parameters: ["inside4_session":inside4_session!, "page": pageNumber]).responseDecodable(of: Products.self) { response in
+                    guard let products = response.value else { return }
+                    defaults.set(products.newToken, forKey: "new_token")
         }
     }
     

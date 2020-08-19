@@ -17,7 +17,7 @@
 		FC2756F624ACFF180061E276 /* UserProfileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2756F424ACFF180061E276 /* UserProfileController.xib */; };
 		FC566A1B249D0D9800D5F7E2 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC566A19249D0D9800D5F7E2 /* RegistrationViewController.swift */; };
 		FC566A1C249D0D9800D5F7E2 /* RestrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC566A1A249D0D9800D5F7E2 /* RestrationViewController.xib */; };
-		FC567088249BDB0B00AA4BCD /* ItemOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC567086249BDB0B00AA4BCD /* ItemOneViewController.swift */; };
+		FC567088249BDB0B00AA4BCD /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC567086249BDB0B00AA4BCD /* ProductsViewController.swift */; };
 		FC567089249BDB0B00AA4BCD /* ItemOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC567087249BDB0B00AA4BCD /* ItemOneViewController.xib */; };
 		FC56708C249BDB9100AA4BCD /* ItemTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */; };
 		FC56708D249BDB9100AA4BCD /* ItemTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */; };
@@ -25,9 +25,11 @@
 		FC567091249BDC3000AA4BCD /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC56708F249BDC3000AA4BCD /* MoreViewController.xib */; };
 		FC567094249BEAD000AA4BCD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC567092249BEAD000AA4BCD /* LoginViewController.swift */; };
 		FC567095249BEAD000AA4BCD /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC567093249BEAD000AA4BCD /* LoginViewController.xib */; };
+		FC5B92C224EC14F9006087F9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5B92C124EC14F9006087F9 /* Product.swift */; };
 		FC5C1D67249A621B0057F386 /* FavouriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC5C1D66249A621B0057F386 /* FavouriteViewController.xib */; };
 		FC5C1D69249A6FE60057F386 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C1D68249A6FE60057F386 /* FavouriteViewController.swift */; };
 		FC5FAF3A24AE3E4500BD7A94 /* NetworkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5FAF3924AE3E4500BD7A94 /* NetworkApi.swift */; };
+		FC62BC6224ED51F800A50DD5 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62BC6124ED51F800A50DD5 /* Products.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +47,7 @@
 		FC2756F424ACFF180061E276 /* UserProfileController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileController.xib; sourceTree = "<group>"; };
 		FC566A19249D0D9800D5F7E2 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		FC566A1A249D0D9800D5F7E2 /* RestrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestrationViewController.xib; sourceTree = "<group>"; };
-		FC567086249BDB0B00AA4BCD /* ItemOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemOneViewController.swift; sourceTree = "<group>"; };
+		FC567086249BDB0B00AA4BCD /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		FC567087249BDB0B00AA4BCD /* ItemOneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemOneViewController.xib; sourceTree = "<group>"; };
 		FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTwoViewController.swift; sourceTree = "<group>"; };
 		FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTwoViewController.xib; sourceTree = "<group>"; };
@@ -53,9 +55,11 @@
 		FC56708F249BDC3000AA4BCD /* MoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
 		FC567092249BEAD000AA4BCD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FC567093249BEAD000AA4BCD /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		FC5B92C124EC14F9006087F9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		FC5C1D66249A621B0057F386 /* FavouriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteViewController.xib; sourceTree = "<group>"; };
 		FC5C1D68249A6FE60057F386 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		FC5FAF3924AE3E4500BD7A94 /* NetworkApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApi.swift; sourceTree = "<group>"; };
+		FC62BC6124ED51F800A50DD5 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 		454751B41F19856F002AC524 = {
 			isa = PBXGroup;
 			children = (
+				FC5B92C024EC1492006087F9 /* Model */,
 				FC5FAF3824AE3B6200BD7A94 /* Network */,
 				FC566A1E249D31F400D5F7E2 /* xibs */,
 				FC566A1D249D318700D5F7E2 /* Controllers */,
@@ -125,7 +130,7 @@
 			children = (
 				FC567092249BEAD000AA4BCD /* LoginViewController.swift */,
 				FC566A19249D0D9800D5F7E2 /* RegistrationViewController.swift */,
-				FC567086249BDB0B00AA4BCD /* ItemOneViewController.swift */,
+				FC567086249BDB0B00AA4BCD /* ProductsViewController.swift */,
 				FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */,
 				FC56708E249BDC3000AA4BCD /* MoreViewController.swift */,
 				FC5C1D68249A6FE60057F386 /* FavouriteViewController.swift */,
@@ -147,6 +152,15 @@
 				FC5C1D66249A621B0057F386 /* FavouriteViewController.xib */,
 			);
 			path = xibs;
+			sourceTree = "<group>";
+		};
+		FC5B92C024EC1492006087F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC5B92C124EC14F9006087F9 /* Product.swift */,
+				FC62BC6124ED51F800A50DD5 /* Products.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FC5FAF3824AE3B6200BD7A94 /* Network */ = {
@@ -289,9 +303,11 @@
 				FC5C1D69249A6FE60057F386 /* FavouriteViewController.swift in Sources */,
 				FC566A1B249D0D9800D5F7E2 /* RegistrationViewController.swift in Sources */,
 				FC56708C249BDB9100AA4BCD /* ItemTwoViewController.swift in Sources */,
+				FC5B92C224EC14F9006087F9 /* Product.swift in Sources */,
 				FC5FAF3A24AE3E4500BD7A94 /* NetworkApi.swift in Sources */,
 				FC567090249BDC3000AA4BCD /* MoreViewController.swift in Sources */,
-				FC567088249BDB0B00AA4BCD /* ItemOneViewController.swift in Sources */,
+				FC567088249BDB0B00AA4BCD /* ProductsViewController.swift in Sources */,
+				FC62BC6224ED51F800A50DD5 /* Products.swift in Sources */,
 				454751C11F19856F002AC524 /* AppDelegate.swift in Sources */,
 				FC2756F524ACFF180061E276 /* UserProfileController.swift in Sources */,
 			);

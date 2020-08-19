@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ItemOneViewController: UIViewController {
+class ProductsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        NetworkApi.getProducts(pageNumber: 0)
         // Do any additional setup after loading the view.
     }
     
