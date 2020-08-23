@@ -15,10 +15,12 @@
 		454751CB1F19856F002AC524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454751C91F19856F002AC524 /* LaunchScreen.storyboard */; };
 		FC2756F524ACFF180061E276 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2756F324ACFF180061E276 /* UserProfileController.swift */; };
 		FC2756F624ACFF180061E276 /* UserProfileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2756F424ACFF180061E276 /* UserProfileController.xib */; };
+		FC44595924EFBE460063465D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC44595724EFBE460063465D /* ProductCell.swift */; };
+		FC44595C24EFCD430063465D /* ProductViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC44595B24EFCD430063465D /* ProductViewController.storyboard */; };
+		FC44595E24F0059F0063465D /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC44595D24F0059F0063465D /* ProductCell.xib */; };
 		FC566A1B249D0D9800D5F7E2 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC566A19249D0D9800D5F7E2 /* RegistrationViewController.swift */; };
 		FC566A1C249D0D9800D5F7E2 /* RestrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC566A1A249D0D9800D5F7E2 /* RestrationViewController.xib */; };
 		FC567088249BDB0B00AA4BCD /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC567086249BDB0B00AA4BCD /* ProductsViewController.swift */; };
-		FC567089249BDB0B00AA4BCD /* ProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC567087249BDB0B00AA4BCD /* ProductsViewController.xib */; };
 		FC56708C249BDB9100AA4BCD /* ItemTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */; };
 		FC56708D249BDB9100AA4BCD /* ItemTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */; };
 		FC567090249BDC3000AA4BCD /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC56708E249BDC3000AA4BCD /* MoreViewController.swift */; };
@@ -45,10 +47,12 @@
 		628749C8A5ACD1B46F0D8EDD /* Pods_Insode0ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insode0ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2756F324ACFF180061E276 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		FC2756F424ACFF180061E276 /* UserProfileController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileController.xib; sourceTree = "<group>"; };
+		FC44595724EFBE460063465D /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		FC44595B24EFCD430063465D /* ProductViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductViewController.storyboard; sourceTree = "<group>"; };
+		FC44595D24F0059F0063465D /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		FC566A19249D0D9800D5F7E2 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		FC566A1A249D0D9800D5F7E2 /* RestrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestrationViewController.xib; sourceTree = "<group>"; };
 		FC567086249BDB0B00AA4BCD /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
-		FC567087249BDB0B00AA4BCD /* ProductsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsViewController.xib; sourceTree = "<group>"; };
 		FC56708A249BDB9100AA4BCD /* ItemTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTwoViewController.swift; sourceTree = "<group>"; };
 		FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTwoViewController.xib; sourceTree = "<group>"; };
 		FC56708E249BDC3000AA4BCD /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				FC5C1D68249A6FE60057F386 /* FavouriteViewController.swift */,
 				454751C21F19856F002AC524 /* MainViewController.swift */,
 				FC2756F324ACFF180061E276 /* UserProfileController.swift */,
+				FC44595724EFBE460063465D /* ProductCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -145,11 +150,12 @@
 			children = (
 				FC566A1A249D0D9800D5F7E2 /* RestrationViewController.xib */,
 				FC567093249BEAD000AA4BCD /* LoginViewController.xib */,
-				FC567087249BDB0B00AA4BCD /* ProductsViewController.xib */,
 				FC56708B249BDB9100AA4BCD /* ItemTwoViewController.xib */,
 				FC2756F424ACFF180061E276 /* UserProfileController.xib */,
 				FC56708F249BDC3000AA4BCD /* MoreViewController.xib */,
 				FC5C1D66249A621B0057F386 /* FavouriteViewController.xib */,
+				FC44595B24EFCD430063465D /* ProductViewController.storyboard */,
+				FC44595D24F0059F0063465D /* ProductCell.xib */,
 			);
 			path = xibs;
 			sourceTree = "<group>";
@@ -237,8 +243,9 @@
 				FC5C1D67249A621B0057F386 /* FavouriteViewController.xib in Resources */,
 				454751CB1F19856F002AC524 /* LaunchScreen.storyboard in Resources */,
 				FC566A1C249D0D9800D5F7E2 /* RestrationViewController.xib in Resources */,
-				FC567089249BDB0B00AA4BCD /* ProductsViewController.xib in Resources */,
 				454751C81F19856F002AC524 /* Assets.xcassets in Resources */,
+				FC44595C24EFCD430063465D /* ProductViewController.storyboard in Resources */,
+				FC44595E24F0059F0063465D /* ProductCell.xib in Resources */,
 				FC567091249BDC3000AA4BCD /* MoreViewController.xib in Resources */,
 				FC56708D249BDB9100AA4BCD /* ItemTwoViewController.xib in Resources */,
 				FC2756F624ACFF180061E276 /* UserProfileController.xib in Resources */,
@@ -302,6 +309,7 @@
 				454751C31F19856F002AC524 /* MainViewController.swift in Sources */,
 				FC5C1D69249A6FE60057F386 /* FavouriteViewController.swift in Sources */,
 				FC566A1B249D0D9800D5F7E2 /* RegistrationViewController.swift in Sources */,
+				FC44595924EFBE460063465D /* ProductCell.swift in Sources */,
 				FC56708C249BDB9100AA4BCD /* ItemTwoViewController.swift in Sources */,
 				FC5B92C224EC14F9006087F9 /* FeedItem.swift in Sources */,
 				FC5FAF3A24AE3E4500BD7A94 /* NetworkApi.swift in Sources */,
