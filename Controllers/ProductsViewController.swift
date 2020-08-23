@@ -25,8 +25,6 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         let nib = UINib(nibName: "ProductCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "ProductCell")
-        tableView.dataSource = self
-        tableView.delegate = self
         NetworkApi.getFeed(pageNumber: 0)
         NotificationCenter.default.addObserver(self, selector: #selector(showFeed(_:)), name:NSNotification.Name(rawValue: "FEED_RECEIVED"), object: nil)
         // Do any additional setup after loading the view.
