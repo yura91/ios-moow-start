@@ -118,7 +118,7 @@ class NetworkApi : NSObject{
     static func getFeed(pageNumber: Int){
         let inside4_session = defaults.string(forKey: "new_token")
         AF.request("https://inside4sandbox.ikiev.biz/Info_API/feed",
-                   method: .post,
+                   method: .get,
                    parameters: ["inside4_session":inside4_session!, "page": pageNumber]).responseDecodable(of: Feed.self) { response in
                     switch response.result {
                     case .success(let value):

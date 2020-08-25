@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ProductsViewController.tableView(_:willDisplay:forRowAt:):ProductsViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ProductsViewController.showFeed(_:):ProductsViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
