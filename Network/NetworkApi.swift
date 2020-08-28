@@ -122,10 +122,14 @@ class NetworkApi : NSObject{
                    parameters: ["inside4_session":inside4_session!, "page": pageNumber]).responseDecodable(of: Feed.self) { response in
                     switch response.result {
                     case .success(let value):
-                        let products = value
-                        defaults.set(products.newToken, forKey: "new_token")
+                        let feed = value
+                        for product in feed.products {
+                            let url = "https://inside4sandbox.ikiev.biz" + product.content_img
+                            product.content_img = url
+                        }
+                        defaults.set(feed.newToken, forKey: "new_token")
                         NotificationCenter.default.post(name: Notification.Name(rawValue:"FEED_RECEIVED"),
-                                                        object: nil, userInfo: ["feed":products])
+                                                        object: nil, userInfo: ["feed":feed])
                         
                     case .failure(let error):
                         print(error)

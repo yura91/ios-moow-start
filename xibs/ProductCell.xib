@@ -19,6 +19,8 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RMu-aO-X7d">
                         <rect key="frame" x="10" y="10" width="165" height="296"/>
                         <constraints>
+                            <constraint firstAttribute="height" constant="296" id="9Ym-pR-VUn"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="TJ5-WW-mtx"/>
                             <constraint firstAttribute="width" constant="165" id="TLw-o8-jh6"/>
                         </constraints>
                     </imageView>
@@ -31,9 +33,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAz-fW-3ep">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAz-fW-3ep">
                                 <rect key="frame" x="0.0" y="101.5" width="560" height="81"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -62,7 +64,9 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="descLabel" destination="BAz-fW-3ep" id="m2K-ck-x9i"/>
                 <outlet property="label" destination="9pd-LI-bYV" id="wNc-cg-XQX"/>
+                <outlet property="loadedImage" destination="RMu-aO-X7d" id="qBW-ZO-hNy"/>
             </connections>
             <point key="canvasLocation" x="-497.82608695652181" y="109.82142857142857"/>
         </tableViewCell>

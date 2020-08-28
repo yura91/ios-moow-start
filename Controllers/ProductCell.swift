@@ -12,6 +12,10 @@ class ProductCell: UITableViewCell {
 
     @IBOutlet weak var label: UILabel!
     
+    @IBOutlet weak var loadedImage: UIImageView!
+    
+    @IBOutlet weak var descLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

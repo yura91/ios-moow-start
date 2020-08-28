@@ -8,5 +8,6 @@ target 'Insode0ios' do
   # Pods for Insode0ios
 pod 'Alamofire', '~> 5.0.0-rc.2'
 pod 'AlamofireNetworkActivityLogger', '~> 3.0'
+pod 'PINRemoteImage', '~> 3.0.0-beta'
 
 end

@@ -7,6 +7,39 @@
 //
 
 import UIKit
+import PINRemoteImage
+import PINCache
+import Alamofire
+
+
+extension String {
+
+    var utfData: Data {
+        return Data(utf8)
+    }
+
+    var attributedHtmlString: NSAttributedString? {
+
+        do {
+            return try NSAttributedString(data: utfData,
+            options: [
+                      .documentType: NSAttributedString.DocumentType.html,
+                      .characterEncoding: String.Encoding.utf8.rawValue
+                     ], documentAttributes: nil)
+        } catch {
+            print("Error:", error)
+            return nil
+        }
+    }
+}
+
+extension UILabel {
+   func setAttributedHtmlText(_ html: String) {
+      if let attributedText = html.attributedHtmlString {
+        self.text = attributedText.string
+      }
+   }
+}
 
 class ProductsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -23,6 +56,17 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath) as! ProductCell
         cell.label.text = products[indexPath.row].content_name
+        
+        cell.descLabel.setAttributedHtmlText(products[indexPath.row].content_desc)
+//        cell.loadedImage.pin_setImage(from: URL(string: products[indexPath.row].content_img))
+        AF.request(products[indexPath.row].content_img, method: .get).response { response in
+            guard let image = UIImage(data:response.data!) else {
+                // Handle error
+                return
+            }
+            let imageData = image.jpegData(compressionQuality: 1.0)
+            cell.loadedImage.image = UIImage(data : imageData!)
+        }
         return cell
     }
     
@@ -34,7 +78,9 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
             }
         }
     }
+    
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib(nibName: "ProductCell", bundle: nil)
