@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/AlamofireNetworkActivityLogger" "${PODS_CONFIGURATION_BUILD_DIR}/PINCache" "${PODS_CONFIGURATION_BUILD_DIR}/PINOperation" "${PODS_CONFIGURATION_BUILD_DIR}/PINRemoteImage"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/AlamofireNetworkActivityLogger"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PINCache/PINCache.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PINOperation/PINOperation.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PINRemoteImage/PINRemoteImage.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "Accelerate" -framework "Alamofire" -framework "AlamofireNetworkActivityLogger" -framework "CFNetwork" -framework "Foundation" -framework "ImageIO" -framework "PINCache" -framework "PINOperation" -framework "PINRemoteImage" -weak_framework "UIKit"
+OTHER_LDFLAGS = $(inherited) -framework "Alamofire" -framework "AlamofireNetworkActivityLogger" -framework "CFNetwork"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

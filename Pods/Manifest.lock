@@ -2,42 +2,20 @@ PODS:
   - Alamofire (5.0.5)
   - AlamofireNetworkActivityLogger (3.0.0):
     - Alamofire (~> 5.0.0-rc.2)
-  - PINCache (3.0.1-beta.8):
-    - PINCache/Arc-exception-safe (= 3.0.1-beta.8)
-    - PINCache/Core (= 3.0.1-beta.8)
-  - PINCache/Arc-exception-safe (3.0.1-beta.8):
-    - PINCache/Core
-  - PINCache/Core (3.0.1-beta.8):
-    - PINOperation (~> 1.1.1)
-  - PINOperation (1.1.2)
-  - PINRemoteImage (3.0.0):
-    - PINRemoteImage/PINCache (= 3.0.0)
-  - PINRemoteImage/Core (3.0.0):
-    - PINOperation
-  - PINRemoteImage/PINCache (3.0.0):
-    - PINCache (= 3.0.1-beta.8)
-    - PINRemoteImage/Core
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.2)
   - AlamofireNetworkActivityLogger (~> 3.0)
-  - PINRemoteImage (~> 3.0.0-beta)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireNetworkActivityLogger
-    - PINCache
-    - PINOperation
-    - PINRemoteImage
 
 SPEC CHECKSUMS:
   Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
   AlamofireNetworkActivityLogger: 94e8a7d454a4a9800cef1d0c1d3699754493684b
-  PINCache: 534fd41d358d828dfdf227a0d327f3673a65e20b
-  PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
-  PINRemoteImage: e2b89e19fb6e77ffc099f9d9f3b3fe1745e3f9f9
 
-PODFILE CHECKSUM: e9355c21f317217264aba6585e80ddb580f569c3
+PODFILE CHECKSUM: 9e9f77a329844484357d61d9e705daff0614eea1
 
 COCOAPODS: 1.8.4
