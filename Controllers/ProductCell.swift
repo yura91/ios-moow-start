@@ -8,21 +8,12 @@
 
 import UIKit
 
-class ProductCell: UITableViewCell {
+class ProductCell: UICollectionViewCell {
 
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var image: UIImageView!
     
-    @IBOutlet weak var loadedImage: UIImageView!
+    @IBOutlet weak var desc: UILabel!
     
-    @IBOutlet weak var descLabel: UILabel!
+    @IBOutlet weak var tittle: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
-    }
 }
